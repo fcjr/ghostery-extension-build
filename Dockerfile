@@ -1,4 +1,4 @@
-ARG version=1809
+ARG version=1709
 FROM mcr.microsoft.com/windows/servercore:$version
 
 RUN powershell -ExecutionPolicy unrestricted -Command "Invoke-Expression ((New-Object Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))"
